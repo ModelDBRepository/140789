@@ -1,6 +1,6 @@
 // runs simulation to reproduce figure 2 of the paper
 
-//Nörenberg A, Hu H, Vida I, Bartos M, Jonas P. (2010) Distinct nonuniform cable properties optimize rapid and efficient activation of fast-spiking GABAergic interneurons. PNAS 107(2):894-9.
+//NÃ¶renberg A, Hu H, Vida I, Bartos M, Jonas P. (2010) Distinct nonuniform cable properties optimize rapid and efficient activation of fast-spiking GABAergic interneurons. PNAS 107(2):894-9.
 
 //Please, send bug reports and comments to
 //anja.matthiae at charite.de or anja at matthiae.eu
@@ -36,7 +36,7 @@ PI=3.1415926535897932384626433832795
 // DEFINITION OF MODELTYPE --------------------------------------------------
 modeltype = 2		// 0 for uniform model, 1 for NU1, 2 for NU2
 axialresist = 258.564386	// axial resistance in Ohm cm
-membcapacit = 0.96858		// membrane capacitance in µF cm-2
+membcapacit = 0.96858		// membrane capacitance in ÂµF cm-2
 membresis_dist = 15490.215663 	// membrane resistance for distal dendrites in Ohm cm2
 membresis_prox = 10723.125012 	// membrane resistance for proximal dendrites in Ohm cm2
 membresis_axon = 269769.046043	// membrane resistance for axon in Ohm cm2

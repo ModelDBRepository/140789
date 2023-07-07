@@ -1,5 +1,5 @@
 // NEURON morphology file for a dentate gyrus basket cell
-// BC3 in Nörenberg et al., 2010 (PNAS 107:894-899)
+// BC3 in NÃ¶renberg et al., 2010 (PNAS 107:894-899)
 // created by importing Neurolucida reconstruction file using the Import3D tool of NEURON (vs 6.1)
 // The axon is connected to apic[1]: connect axon(0), apic[1](1.0).
 // Basal dendrites (dend) are connected to soma(0).
