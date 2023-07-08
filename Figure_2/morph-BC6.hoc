@@ -1,8 +1,8 @@
 /*
 morphology file for BC6, generated using the Import3D Tool of NEURON (vs 6.1), having loaded the corresponding Neurolucida File
 axon is connected between dend and dend[1]: connect axon(0), dend(1.0)
-lambda(1000) = 545.212µm
-dendritic electrode  (needs to be changed in advance procedure for recording - see run_HH3.hoc) was located at site apic[291](8/9) (nseg was 9) with distance of 220.62429µm from soma
+lambda(1000) = 545.212Âµm
+dendritic electrode  (needs to be changed in advance procedure for recording - see run_HH3.hoc) was located at site apic[291](8/9) (nseg was 9) with distance of 220.62429Âµm from soma
 dend always connected to soma(0) as basal dendrite and apic always connected to soma(1) as apical dendrite
 */
 

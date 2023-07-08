@@ -1,7 +1,7 @@
 // NEURON morphology file for a dentate gyrus basket cell
-// BC5 in Nörenberg et al., 2010 (PNAS 107:894-899)
+// BC5 in NÃ¶renberg et al., 2010 (PNAS 107:894-899)
 // created by importing Neurolucida reconstruction file using the Import3D tool of NEURON (vs 6.1)
-// The dendritic electrode was located at site apic[25](1.0) or apic[119](0.0) with distance of 120.83952µm from soma.
+// The dendritic electrode was located at site apic[25](1.0) or apic[119](0.0) with distance of 120.83952Âµm from soma.
 // The axon is is connected to soma: connect axon(0), soma(0).
 // Basal dendrites (dend) are connected to soma(0).
 // Apical dendrites (apic) are connected to soma(1).

@@ -3,15 +3,15 @@
 defines pipettes for simulations of passive cable models
 */
 
-// adapted from Schmidt-Hieber et al. 2007, J Neurosci 27:8430 according to Roth and Häusser 2001, J Physiol 535:445
+// adapted from Schmidt-Hieber et al. 2007, J Neurosci 27:8430 according to Roth and HÃ¤usser 2001, J Physiol 535:445
 
 // MORPHOLOGY OF PIPETTES ---------------------------------------------------
 n_pip=80 			// sections per pipette
 create pip1[n_pip]
 create pip2[n_pip]
 
-for i=0,n_pip-1 pip1[i] {	// create a conic pipette with an initial diameter (section 0) of 1 µm and a final diameter (section n_pip-1) of 128 µm:
-	diam=1+127/(n_pip-1)*i	// total length is 1000 µm
+for i=0,n_pip-1 pip1[i] {	// create a conic pipette with an initial diameter (section 0) of 1 Âµm and a final diameter (section n_pip-1) of 128 Âµm:
+	diam=1+127/(n_pip-1)*i	// total length is 1000 Âµm
 	L=(1/n_pip)*1000
 }
 for i=0,n_pip-2 {
@@ -19,7 +19,7 @@ for i=0,n_pip-2 {
 }
 
 for i=0,n_pip-1 pip2[i] {	// second pipette is just a copy from above's pipette except the name pip2
-	diam=1+127/(n_pip-1)*i	// total length is 1000 µm
+	diam=1+127/(n_pip-1)*i	// total length is 1000 Âµm
 	L=(1/n_pip)*1000
 }
 for i=0,n_pip-2 {
@@ -46,7 +46,7 @@ for i=0,n_pip-1 {
 }
 // this loop calculates the sum of all scaling factors (L/PI/r_pip/r_pip). Since Ra has to be the same for every compartment (specific axial resistance is independent of diameter!) Ra is then calculated dependent on the Rser in the following loop:
 for i=0,n_pip-1 pip1[i] {
-	Ra=Rser1/sum_pip	// this is now in MegaOhm * µm
+	Ra=Rser1/sum_pip	// this is now in MegaOhm * Âµm
 	Ra*=100	     		// convert to Ohm cm
 }
 
@@ -57,7 +57,7 @@ for i=0,n_pip-1 {
 	sum_pip+=pip2[i].L/PI/r_pip/r_pip
 }
 for i=0,n_pip-1 pip2[i] {
-	Ra=Rser2/sum_pip // this is now in MegaOhm * µm
+	Ra=Rser2/sum_pip // this is now in MegaOhm * Âµm
 	Ra*=100	     // convert to Ohm cm
 }
 
@@ -68,7 +68,7 @@ for i=0,n_pip-1 {
 
 // arguments for proc adjustPipCap():
 //(1)	section reference to a pipette section (called by $o1 as an object)
-//(2) capacitance (see Roth and Häusser 2001); here, the capacitance per unit length (small letter) is constant instead of the specific capacitance! That's why the capacitance needs to be a range variable.
+//(2) capacitance (see Roth and HÃ¤usser 2001); here, the capacitance per unit length (small letter) is constant instead of the specific capacitance! That's why the capacitance needs to be a range variable.
 
 // adjusts the specific capacitance accordingly
 proc adjustPipCap() {local cm_tot,area_tot,n_s,cm_pul

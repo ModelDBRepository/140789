@@ -31,7 +31,7 @@ topol()
 secdef()
 
 // Segmentation ----------------------------------------------------------
-// The number of segments per section (nseg) was set according to the "d-lambda rule" (see Carnevale and Hines 2006, The NEURON Book, Cambridge Univ Press ). The alternating current length constant at 1 kHz ,lambda(1kHz), was calculated for each section, and nseg was increased until the length of all individual segments was <10% of lambda(1kHz), assuming Rm = 10 kOhm cm2, Cm = 1 µF cm-2, and Ri = 100 Ohm cm. Nseg was constrained to odd numbers;
+// The number of segments per section (nseg) was set according to the "d-lambda rule" (see Carnevale and Hines 2006, The NEURON Book, Cambridge Univ Press ). The alternating current length constant at 1 kHz ,lambda(1kHz), was calculated for each section, and nseg was increased until the length of all individual segments was <10% of lambda(1kHz), assuming Rm = 10 kOhm cm2, Cm = 1 ÂµF cm-2, and Ri = 100 Ohm cm. Nseg was constrained to odd numbers;
 strdef NsegFile
 NsegFile="NsegOut-BC6.txt"
 objref AllNseg

@@ -1,5 +1,5 @@
 // NEURON morphology file for a dentate gyrus basket cell
-// BC4 in Nörenberg et al., 2010 (PNAS 107:894-899)
+// BC4 in NÃ¶renberg et al., 2010 (PNAS 107:894-899)
 // created by importing Neurolucida reconstruction file using the Import3D tool of NEURON (vs 6.1)
 // The dendritic electrode was located at site apic[374](1.0) or apic[375](0.0).
 // The axon is placed at a trifurcation node between apic[10], apic[11] and apic[374]: connect axon(0), apic[10](1.0).
